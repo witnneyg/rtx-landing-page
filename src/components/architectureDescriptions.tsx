@@ -12,9 +12,9 @@ export function ArchitectureDescription({
   id,
 }: architectureDescriptionProps) {
   return (
-    <div key={id}>
-      <img src={img} alt="arquitetura informatica" />
-      <h5>{title}</h5>
+    <div key={id} className="flex flex-col items-center gap-2">
+      <img src={img} alt="arquitetura informatica" className="w-28 mt-8" />
+      <h5 className="font-bold text-lg">{title}</h5>
       <span>{description}</span>
     </div>
   );

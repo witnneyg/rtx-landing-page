@@ -1,54 +1,62 @@
 import { ArchitectureDescription } from "./architectureDescriptions";
 import geforceRtxt from "/public/geforce-rtx-super-architecture-bm-xl550-p.jpg";
-import geforceRtxp from "/public/geforce-rtx-super-architecture-bm-xl550-t.jpg";
+// import geforceRtxp from "/public/geforce-rtx-super-architecture-bm-xl550-t.jpg";
+import img1 from "/public/cpu-icon.svg";
+import img2 from "/public/raytracingicon.svg";
+import img3 from "/public/nvidiaDlssIcon.svg";
+import img4 from "/public/baixaLatenciaIcon.svg";
+import img5 from "/public/enconderIcon.svg";
+import img6 from "/public/broadcastIcon.svg";
+import img7 from "/public/nvidiaStudioIcon.svg";
+import img8 from "/public/driversGamingIcon.svg";
 
 const architectureDescriptions = [
   {
     title: "Placas de Vídeo de Ponta",
     description: "Arquitetura NVIDIA Ada Lovelace",
-    img: "",
+    img: img1,
     id: "1",
   },
   {
     title: "Gráficos Realistas e Imersivos",
     description: "Ray Tracing Cores Dedicados",
-    img: "",
+    img: img2,
     id: "2",
   },
   {
     title: "Desempenho Acelerado por AI",
     description: "NVIDIA DLSS 3",
-    img: "",
+    img: img3,
     id: "3",
   },
   {
     title: "Tempo de Resposta Sensacional",
     description: "Plataforma de Baixa Latência NVIDIA Reflex",
-    img: "",
+    img: img4,
     id: "4",
   },
   {
     title: "Feitas para Livestreaming",
     description: "NVIDIA Encoder",
-    img: "",
+    img: img5,
     id: "5",
   },
   {
     title: "Voz e Vídeo Aprimorados por AI",
     description: "NVIDIA Broadcast",
-    img: "",
+    img: img6,
     id: "6",
   },
   {
     title: "Acelere Sua Criatividade",
     description: "NVIDIA Studio",
-    img: "",
+    img: img7,
     id: "7",
   },
   {
     title: "Desempenho e Confiabilidade",
     description: "Drivers Game Ready e Studio",
-    img: "",
+    img: img8,
     id: "8",
   },
 ];
@@ -63,7 +71,7 @@ export function ArchitectureSection() {
       <h2 className="text-center font-bold text-2xl mt-3">
         Desenhado para te dar superpoderes
       </h2>
-      <div className="mt-8 px-4">
+      <div className="mt-10 px-4">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-1">
             <h5 className=" font-semibold text-lg">
@@ -92,7 +100,7 @@ export function ArchitectureSection() {
         </div>
       </div>
 
-      <div className="">
+      <div className="flex flex-col justify-center items-center text-center ">
         {architectureDescriptions.map((items) => (
           <ArchitectureDescription
             title={items.title}
