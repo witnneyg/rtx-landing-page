@@ -2,7 +2,7 @@ import cyberpunkLogo from "/public/cyberpunk-logo.png";
 
 export function Dlss3Section() {
   return (
-    <div className="flex flex-col text-center items-center gap-5 mt-10 px-4 bg-nvidia-dlss-video-bg bg-no-repeat bg-center bg-cover">
+    <div className="flex flex-col text-center items-center gap-6 mt-10 px-4 pt-12 bg-nvidia-dlss-video-bg bg-no-repeat bg-center bg-cover">
       <span className="font-bold">NVIDIA DLSS 3</span>
       <h2 className="font-bold text-2xl">
         O Multiplicador de Desempenho, com Tecnologia Fornecida por AI.

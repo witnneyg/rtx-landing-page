@@ -1,4 +1,5 @@
 import { ArchitectureSection } from "./components/architectureSection";
+import { CreationCharacteristics } from "./components/creationCharacteristics";
 import { CreationSection } from "./components/creationSection";
 import { Dlss3Section } from "./components/dlss3Section";
 import { Header } from "./components/header";
@@ -9,6 +10,8 @@ import { PerformanceSection } from "./components/performanceSection";
 import { RayTracingAction } from "./components/rayTracingAction";
 import { RayTracingSection } from "./components/rayTracingSection";
 import { ReflexSection } from "./components/reflexSection";
+import { SpecficationGallery } from "./components/specificationsGallery";
+import { SpecificationsSection } from "./components/specificationsSection";
 
 export function App() {
   return (
@@ -24,6 +27,9 @@ export function App() {
       <Dlss3Section />
       <ReflexSection />
       <CreationSection />
+      <CreationCharacteristics />
+      <SpecificationsSection />
+      <SpecficationGallery />
     </div>
   );
 }
