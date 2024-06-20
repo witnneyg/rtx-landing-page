@@ -1,10 +1,21 @@
 import { ReactNode } from "react";
 
-export function Button({ children }: { children: ReactNode }) {
+interface ButtonProps {
+  children: ReactNode;
+  size: "small" | "medium";
+}
+
+export function Button({ children, size }: ButtonProps) {
+  const baseStyle =
+    "p-[6px]  text-sm text-black font-semibold bg-green-400 hover:bg-red-400";
+
+  const sizesStyles = {
+    medium: "w-60",
+    small: "w-20",
+  };
+
   return (
-    <button className="p-2 text-sm w-20 text-black font-semibold bg-green-400 hover:bg-red-400">
-      {children}
-    </button>
+    <button className={`${baseStyle}  ${sizesStyles[size]}`}>{children}</button>
   );
 }
 
