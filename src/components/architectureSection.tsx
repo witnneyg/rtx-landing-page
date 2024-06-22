@@ -1,6 +1,5 @@
 import { ArchitectureDescription } from "./architectureDescriptions";
-import geforceRtxt from "/public/geforce-rtx-super-architecture-bm-xl550-p.jpg";
-// import geforceRtxp from "/public/geforce-rtx-super-architecture-bm-xl550-t.jpg";
+// import geforceRtxt from "/public/geforce-rtx-super-architecture-bm-xl550-p.jpg";
 import img1 from "/public/cpu-icon.svg";
 import img2 from "/public/raytracingicon.svg";
 import img3 from "/public/nvidiaDlssIcon.svg";
@@ -65,12 +64,16 @@ export function ArchitectureSection() {
   return (
     <div className="flex flex-col text-white ">
       <div className=" lg:bg-nvidia-arquitetura-background lg:bg-no-repeat lg:py-16 bg-cover lg:w-full bg-center lg:flex lg:flex-col">
-        <img src={geforceRtxt} alt="arquitetura rtx" className="lg:hidden" />
+        <img
+          src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4080/geforce-rtx-super-architecture-bm-xl550-t.jpg"
+          alt="arquitetura rtx"
+          className="lg:hidden"
+        />
         <div>
-          <h4 className="text-center font-bold ">
+          <h4 className="text-center font-bold lg:text-xl">
             Arquitetura NVIDIA Ada Lovelace
           </h4>
-          <h2 className="text-center font-bold text-2xl mt-3">
+          <h2 className="text-center font-bold text-2xl mt-3 lg:text-4xl">
             Desenhado para te dar superpoderes
           </h2>
         </div>
@@ -78,30 +81,30 @@ export function ArchitectureSection() {
           <div className="w-[41rem]"></div>
           <div className="flex flex-col gap-4 justify-between">
             <div className="flex flex-col gap-1">
-              <h5 className=" font-semibold text-lg">
+              <span className=" font-semibold text-lg lg:text-xl">
                 Novo Multiprocessador de Streaming
-              </h5>
+              </span>
               <span>
                 Aumento de desempenho e eficiência energética de até 2x
               </span>
             </div>
             <div className="flex flex-col gap-1">
-              <h5 className="font-semibold text-lg">
+              <span className="font-bold text-lg  lg:text-xl">
                 Tensor Cores de Quarta Geração
-              </h5>
+              </span>
               <span>
                 Aumento em até 4x no desempenho com DLSS 3 vs. renderização de
                 força bruta
               </span>
             </div>
             <div className="flex flex-col gap-1">
-              <h5 className="font-semibold text-lg">
+              <span className="font-bold text-lg  lg:text-xl">
                 RT Cores de Terceira Geração
-              </h5>
+              </span>
               <span>Aumento de desempenho por Ray Tracing de até 2x</span>
             </div>
-            <span className="font-semibold">
-              Saiba Mais Sobre a Super Poderosa Arquitetura Ada{" "}
+            <span className="font-bold">
+              Saiba Mais Sobre a Super Poderosa Arquitetura Ada
             </span>
           </div>
         </div>

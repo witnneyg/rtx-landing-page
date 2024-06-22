@@ -12,12 +12,12 @@ export function CreationCharacteristicsCards({
   img,
 }: creationCharacteristicsCardsProps) {
   return (
-    <div className="flex flex-col  gap-5 bg-black  pb-7">
-      <img src={img} alt={title} />
-      <div className="flex flex-col gap-5 pl-5">
+    <div className="flex  flex-col bg-black  w-full sm:w-[300px] xl:w-[400px] ">
+      <img src={img} alt={title} className="w-full  object-cover" />
+      <div className="flex flex-col flex-grow justify-between  gap-5 pl-5 p-4 ">
         <span className="text-lg font-bold">{title}</span>
         <p>{description}</p>
-        <span className="font-bold">{more} </span>
+        <span className="font-bold ">{more} </span>
       </div>
     </div>
   );

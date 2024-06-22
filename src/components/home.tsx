@@ -3,7 +3,7 @@ import { Button } from "./button";
 export function Home() {
   return (
     <div className="  text-white flex flex-col gap-5 pt-16 sm:bg-nvidia4090-home-background-mobile sm:bg-center sm:bg-no-repeat sm:h-[690px] lg:bg-nvidia4090-home-background-xl lg:bg-center lg:h-[550px] lg:bg-cover ">
-      <div className="container mx-auto px-4 flex flex-col gap-4">
+      <div className="container mx-auto px-4 lg:px-0 flex flex-col gap-4">
         <h1 className="text-4xl font-bold tracking-tight">GeForce RTX 4090</h1>
         <h3 className="uppercase  text-xl font-bold">mais que rápida</h3>
         <p className="text-sm max-w-[500px] mb-8 font-medium leading-6 ">
