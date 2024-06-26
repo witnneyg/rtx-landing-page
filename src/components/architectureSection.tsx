@@ -62,7 +62,10 @@ const architectureDescriptions = [
 
 export function ArchitectureSection() {
   return (
-    <div className="flex flex-col text-white ">
+    <div
+      id="arquitetura"
+      className="m-auto flex flex-col text-white xl:bg-test-test max-w-screen-d "
+    >
       <div className=" lg:bg-nvidia-arquitetura-background lg:bg-no-repeat lg:py-16 bg-cover lg:w-full bg-center lg:flex lg:flex-col">
         <img
           src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4080/geforce-rtx-super-architecture-bm-xl550-t.jpg"

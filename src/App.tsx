@@ -13,6 +13,10 @@ import { ReflexSection } from "./components/reflexSection";
 import { SpecficationGallery } from "./components/specificationsGallery";
 import { SpecificationsSection } from "./components/specificationsSection";
 
+import "@radix-ui/themes/styles.css";
+
+// https://clips.twitch.tv/SlickShakingAniseOSfrog-oYLKiwWPXGzY1WU9
+
 export function App() {
   return (
     <div className="text-white">

@@ -57,24 +57,52 @@ export function CreationSection() {
   }
 
   return (
-    <div className="flex flex-col items-center bg-gray-800 py-12 gap-6 bg-creative-background-t bg-no-repeat bg-cover">
-      <h2 className="text-2xl font-bold">
+    <div
+      id="criacao"
+      className="flex flex-col overflow-hidden items-center text-center bg-gray-800 py-12 gap-6 bg-creative-background-t bg-no-repeat bg-cover"
+    >
+      <h2 className="text-2xl font-bold lg:text-4xl lg:mt-4">
         Obtenha Vantagem Competitiva com o Reflex
       </h2>
-      <div className="flex justify-between gap-4 ">
-        <span className="font-bold" onClick={() => handleClickOption("1")}>
+      <div className="flex justify-between gap-4 ml-auto lg:m-0 border-b border-neutral-500 mt-4 lg:mt-6  text-lg cursor-pointer">
+        <span
+          className={`font-bold w-52 pb-2 ${
+            optionsActived == "1" ? "border-b-[3px] border-green-500" : ""
+          }`}
+          onClick={() => handleClickOption("1")}
+        >
           NVIDIA Studio
         </span>
-        <span className="font-bold" onClick={() => handleClickOption("2")}>
+        <span
+          className={`font-bold w-52 pb-2 ${
+            optionsActived == "2" ? "border-b-[3px] border-green-500" : ""
+          }`}
+          onClick={() => handleClickOption("2")}
+        >
           NVIDIA Encoder
         </span>
-        <span className="font-bold" onClick={() => handleClickOption("3")}>
+        <span
+          className={`font-bold w-52 pb-2 ${
+            optionsActived == "3" ? "border-b-[3px] border-green-500" : ""
+          }`}
+          onClick={() => handleClickOption("3")}
+        >
           NVIDIA Broadcast
         </span>
-        <span className="font-bold" onClick={() => handleClickOption("4")}>
+        <span
+          className={`font-bold w-52 pb-2 ${
+            optionsActived == "4" ? "border-b-[3px] border-green-500" : ""
+          }`}
+          onClick={() => handleClickOption("4")}
+        >
           NVIDIA Omniverse
         </span>
-        <span className="font-bold" onClick={() => handleClickOption("5")}>
+        <span
+          className={`font-bold w-52 pb-2 ${
+            optionsActived == "5" ? "border-b-[3px] border-green-500" : ""
+          }`}
+          onClick={() => handleClickOption("5")}
+        >
           NVIDIA Canvas
         </span>
       </div>

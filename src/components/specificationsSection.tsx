@@ -2,7 +2,10 @@ import { Button } from "./button";
 
 export function SpecificationsSection() {
   return (
-    <div className="flex flex-col items-center my-10 px-4 gap-10 lg:w-[550px] lg:mx-auto lg:mt-16">
+    <div
+      id="especificacoes"
+      className="flex flex-col items-center my-10 px-4 gap-10 lg:w-[550px] lg:mx-auto lg:mt-16"
+    >
       <h2 className="text-2xl font-bold tracking-wide lg:text-3xl">
         Especificações
       </h2>

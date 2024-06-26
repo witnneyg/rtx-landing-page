@@ -3,7 +3,10 @@ import rtxBgMobile from "/public/rtxBg.jpg";
 
 export function RayTracingSection() {
   return (
-    <div className="flex flex-col mt-20 px-4 lg:px-8 gap-5 lg:bg-nvidia-raytracing-desktop-bg lg:pt-24 h-[440px]  bg-right bg-no-repeat bg-contain">
+    <div
+      id="ray-tracing"
+      className="flex flex-col container m-auto mt-20 justify-center  px-4 lg:px-8 gap-5 lg:bg-nvidia-raytracing-desktop-bg lg:pt-24 h-[440px]  bg-right bg-no-repeat bg-contain"
+    >
       <img src={rtxBgMobile} alt="Ray tracing" className="lg:hidden" />
       <h2 className="font-bold text-2xl lg:text-4xl">RTX, It's On.</h2>
       <span className="font-bold text-xl lg:text-2xl">

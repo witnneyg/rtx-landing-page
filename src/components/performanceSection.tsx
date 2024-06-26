@@ -1,6 +1,9 @@
 export function PerformanceSection() {
   return (
-    <div className="flex flex-col  items-center text-white mt-28 bg-neutral-900 py-12 ">
+    <div
+      id="desempenho"
+      className="flex flex-col  items-center text-white mt-28 bg-neutral-900 py-12 "
+    >
       <h2 className="text-2xl font-bold my-5 lg:my-10 lg:text-4xl">
         Desempenho
       </h2>

@@ -1,10 +1,10 @@
 import { CreationCharacteristicsCards } from "./creactionCharacteristicsCards";
-import img1 from "/public/geforce-game-ready-driver.jpeg";
-import img2 from "/public/geforce-experience.jpeg";
-import img3 from "/public/geforce-rtx-on-super-resolution-apex.jpeg";
-import img4 from "/public/nvidia-g-sync.jpeg";
-import img5 from "/public/geforce-virtual-reality.jpeg";
-import img6 from "/public/nvidia-resizable-bar.jpeg";
+import img1 from "/geforce-game-ready-driver.jpeg";
+import img2 from "/geforce-experience.jpeg";
+import img3 from "/geforce-rtx-on-super-resolution-apex.jpeg";
+import img4 from "/nvidia-g-sync.jpeg";
+import img5 from "/geforce-virtual-reality.jpeg";
+import img6 from "/nvidia-resizable-bar.jpeg";
 
 export function CreationCharacteristics() {
   return (
@@ -12,7 +12,7 @@ export function CreationCharacteristics() {
       <h2 className="text-2xl font-bold pb-8 tracking-wide lg:text-3xl ">
         Características e Benefícios Adicionais
       </h2>
-      <div className="flex flex-wrap text-left gap-8 justify-center px-4 sm:px-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-left gap-8 justify-center px-4 sm:px-0">
         <CreationCharacteristicsCards
           img={img1}
           title="Game Ready Drivers"

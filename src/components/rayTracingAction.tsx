@@ -15,7 +15,7 @@ export function RayTracingAction() {
       </p>
       <span className="font-bold lg:text-lg">Veja o Ray Tracing em Ação</span>
       <div className="p-4 px-6 lg:p-0 lg:mt-3">
-        <img src={rayTracingImg} alt="" />
+        <img src={rayTracingImg} alt="" className="xl:w-[2540px]" />
       </div>
     </div>
   );
