@@ -6,7 +6,7 @@ import { Button } from "./button";
 export function HeaderScrolled() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const [popoverIsOpen, setPopoverIsOpen] = useState(false);
+  const [menuMoreOptionsIsOpen, setMenuMoreOptionsIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,7 +28,7 @@ export function HeaderScrolled() {
       id="headerScrolled"
       className={`bg-neutral-900 ${
         isScrolled
-          ? "fixed top-0 left-0 w-full z-50 mt-14"
+          ? "fixed top-0 left-0 w-full z-50 mt-14 lg:mt-16"
           : "block w-full z-50 "
       }`}
     >
@@ -43,13 +43,14 @@ export function HeaderScrolled() {
             <ChevronUpIcon className={menuIsOpen ? "" : "hidden"} />
           </div>
         </div>
-        <div className="hidden sm:flex lg:text-lg lg:gap-6 justify-between w-full px-4">
+        <div className="hidden sm:flex lg:text-lg lg:gap-6 justify-between items-center w-full lg:justify-normal">
           <a
-            className="text-white flex gap-1 items-center cursor-pointer"
-            onClick={() => setMenuIsOpen(!menuIsOpen)}
+            href="#arquitetura"
+            className="text-white flex gap-1 items-center cursor-pointer "
           >
             Arquitetura
           </a>
+
           <a href="#desempenho" className="hover:text-gray-400">
             Desempenho
           </a>
@@ -62,7 +63,49 @@ export function HeaderScrolled() {
           <a href="#reflex" className="hover:text-gray-400">
             Reflex
           </a>
-          <div>...</div>
+          <a
+            href="#criacao"
+            className="hover:text-gray-400 w-fit py-1 hidden lg:block"
+          >
+            Criação
+          </a>
+          <a
+            href="#especificacoes"
+            className="hover:text-gray-400 w-fit py-1 hidden lg:block"
+          >
+            Especificações
+          </a>
+
+          <div
+            className="lg:hidden p-1 px-2 cursor-pointer"
+            onClick={() => setMenuMoreOptionsIsOpen(!menuMoreOptionsIsOpen)}
+          >
+            ...
+          </div>
+          {menuMoreOptionsIsOpen && (
+            <div className="bg-neutral-800 text-white p-4 absolute top-full left-96 w-full">
+              <nav className="flex flex-col space-y-2 font-normal">
+                <a
+                  href="#criacao"
+                  className="hover:text-gray-400 w-fit py-1"
+                  onClick={() => {
+                    setMenuMoreOptionsIsOpen(!menuMoreOptionsIsOpen);
+                  }}
+                >
+                  Criação
+                </a>
+                <a
+                  href="#especificacoes"
+                  className="hover:text-gray-400 w-fit py-1"
+                  onClick={() => {
+                    setMenuMoreOptionsIsOpen(!menuMoreOptionsIsOpen);
+                  }}
+                >
+                  Especificações
+                </a>
+              </nav>
+            </div>
+          )}
         </div>
         <Button size="small">Comprar</Button>
       </div>

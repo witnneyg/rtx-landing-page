@@ -1,10 +1,10 @@
-import nvidiaReflexBg from "/public/nvidiaReflexBg.jpg";
+import nvidiaReflexBg from "/nvidiaReflexBg.jpg";
 
 export function ReflexSection() {
   return (
     <div
       id="reflex"
-      className="flex flex-col lg:bg-nvidia-reflex-bg lg:h-[700px] lg:bg-cover lg:bg-bottom"
+      className="container mx-auto flex flex-col lg:bg-nvidia-reflex-bg lg:h-[700px] lg:bg-cover lg:bg-bottom max-w-screen-d"
     >
       <img src={nvidiaReflexBg} alt="Nvidia Pc imagem" className="lg:hidden" />
       <div className="flex flex-col items-center gap-4 lg:gap-5 mt-16  ">

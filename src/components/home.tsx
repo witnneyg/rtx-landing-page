@@ -26,7 +26,7 @@ export function Home() {
       </div>
       <img
         src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4090/geforce-rtx-4090-hero-350-p.jpg"
-        alt=""
+        alt="rtx 4090"
         className="sm:hidden"
       />
     </div>

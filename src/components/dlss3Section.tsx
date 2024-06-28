@@ -1,10 +1,10 @@
-import cyberpunkLogo from "/public/cyberpunk-logo.png";
+import cyberpunkLogo from "/cyberpunk-logo.png";
 
 export function Dlss3Section() {
   return (
     <div
       id="dlss-3"
-      className="flex flex-col text-center items-center gap-6 mt-10 lg:mt-0 px-4  pt-12 lg:pt-20 bg-nvidia-dlss-video-bg bg-no-repeat bg-center bg-cover m-auto xl:bg-test-test max-w-screen-d"
+      className="flex flex-col text-center items-center gap-6 mt-10 lg:mt-0 px-4  pt-12 lg:pt-20 bg-nvidia-dlss-video-bg bg-no-repeat bg-center bg-cover m-auto max-w-screen-d"
     >
       <span className="font-bold lg:text-xl">NVIDIA DLSS 3</span>
       <h2 className="font-bold text-2xl lg:text-4xl">
@@ -18,13 +18,14 @@ export function Dlss3Section() {
         adicionais de alta qualidade.
       </span>
       <span className="font-bold lg:text-lg">Veja Como o DLSS Funciona</span>
-      <div className="lg:mt-8">
-        <img
-          src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4090/geforce-dlss-module-thumbnail-ari.jpg"
-          alt="Play Video"
-          className="w-[410px] lg:w-[800px]"
-        ></img>
+      <div className="mt-8 w-full flex justify-center">
+        <iframe
+          src="https://www.youtube.com/embed/QGI8EIgf8Y8"
+          allowFullScreen
+          className="w-[410px] h-[230px] lg:w-[700px] lg:h-[394px]"
+        ></iframe>
       </div>
+
       <span className="text-xs w-[300px] lg:w-full text-gray-400">
         *Captured with GeForce RTX 4090 at 3840 x 2160, highest game settings
         and RT Overdrive mode.

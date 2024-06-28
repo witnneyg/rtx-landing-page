@@ -8,8 +8,8 @@ import img6 from "/nvidia-resizable-bar.jpeg";
 
 export function CreationCharacteristics() {
   return (
-    <div className="flex flex-col gap-5  py-14 bg-neutral-900  items-center">
-      <h2 className="text-2xl font-bold pb-8 tracking-wide lg:text-3xl ">
+    <div className="flex flex-col gap-5  py-14 bg-neutral-900 items-center">
+      <h2 className="text-2xl font-bold pb-8 tracking-wide lg:text-3xl">
         Características e Benefícios Adicionais
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-left gap-8 justify-center px-4 sm:px-0">

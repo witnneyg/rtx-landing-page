@@ -1,13 +1,13 @@
 import { ArchitectureDescription } from "./architectureDescriptions";
 // import geforceRtxt from "/public/geforce-rtx-super-architecture-bm-xl550-p.jpg";
-import img1 from "/public/cpu-icon.svg";
-import img2 from "/public/raytracingicon.svg";
-import img3 from "/public/nvidiaDlssIcon.svg";
-import img4 from "/public/baixaLatenciaIcon.svg";
-import img5 from "/public/enconderIcon.svg";
-import img6 from "/public/broadcastIcon.svg";
-import img7 from "/public/nvidiaStudioIcon.svg";
-import img8 from "/public/driversGamingIcon.svg";
+import img1 from "/cpu-icon.svg";
+import img2 from "/raytracingicon.svg";
+import img3 from "/nvidiaDlssIcon.svg";
+import img4 from "/baixaLatenciaIcon.svg";
+import img5 from "/enconderIcon.svg";
+import img6 from "/broadcastIcon.svg";
+import img7 from "/nvidiaStudioIcon.svg";
+import img8 from "/driversGamingIcon.svg";
 
 const architectureDescriptions = [
   {

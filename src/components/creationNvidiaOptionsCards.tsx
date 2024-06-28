@@ -17,7 +17,7 @@ export function CreationNvidiaOptionsCards({
 }: CreationNvidiaOptionsCardsProps) {
   return (
     <div
-      className="flex flex-col gap-4 px-5 text-start mt-4 w-2/3 md:w-[55%] lg:w-2/3 "
+      className="flex flex-col gap-4 px-5 text-start mt-4 w-2/3 md:w-[57%] lg:w-[60%] 2xl:w-[30%] "
       key={id}
     >
       <img src={img} alt={subTitle} className="w-full" />

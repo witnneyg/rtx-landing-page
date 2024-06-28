@@ -59,7 +59,7 @@ export function CreationSection() {
   return (
     <div
       id="criacao"
-      className="flex flex-col overflow-hidden items-center text-center bg-gray-800 py-12 gap-6 bg-creative-background-t bg-no-repeat bg-cover"
+      className="container mx-auto flex flex-col overflow-hidden items-center text-center bg-gray-800 py-12 gap-6 bg-creative-background-t bg-no-repeat bg-cover max-w-screen-d"
     >
       <h2 className="text-2xl font-bold lg:text-4xl lg:mt-4">
         Obtenha Vantagem Competitiva com o Reflex

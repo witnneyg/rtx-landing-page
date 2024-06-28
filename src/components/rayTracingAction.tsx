@@ -1,4 +1,6 @@
-import rayTracingImg from "/public/geforce-ray-tracing-portal-rtx-on-1536.webp";
+import rayTracingAfter from "/geforce-ray-tracing-portal-rtx-on-1536.webp";
+import rayTracingBefore from "/rtx-dlss-left.webp";
+import ReactCompareImage from "react-compare-image";
 
 export function RayTracingAction() {
   return (
@@ -14,8 +16,12 @@ export function RayTracingAction() {
         incrivelmente detalhados como nunca antes.
       </p>
       <span className="font-bold lg:text-lg">Veja o Ray Tracing em Ação</span>
-      <div className="p-4 px-6 lg:p-0 lg:mt-3">
-        <img src={rayTracingImg} alt="" className="xl:w-[2540px]" />
+      <div className="p-4 px-6 lg:p-0 lg:mt-3 w-[100%] max-w-screen-d ">
+        <ReactCompareImage
+          leftImage={rayTracingBefore}
+          rightImage={rayTracingAfter}
+          sliderLineColor="#76B900"
+        />
       </div>
     </div>
   );

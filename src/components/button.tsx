@@ -20,5 +20,3 @@ export function Button({ children, size }: ButtonProps) {
     </button>
   );
 }
-
-//w-60 padrao

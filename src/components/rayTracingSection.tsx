@@ -1,5 +1,4 @@
-// import rtxBgDesktop from "/public/rtxBg.jpg";
-import rtxBgMobile from "/public/rtxBg.jpg";
+import rtxBgMobile from "/rtxBg.jpg";
 
 export function RayTracingSection() {
   return (
